@@ -6,7 +6,7 @@
 /*   By: tchumbas <tchumbas@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/14 21:10:30 by tchumbas          #+#    #+#             */
-/*   Updated: 2025/08/14 21:25:51 by tchumbas         ###   ########.fr       */
+/*   Updated: 2025/08/14 21:28:25 by tchumbas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,10 +32,10 @@ char	*ft_strdup(char *src)
 	return (dup);
 }
 
-int	main(void)
+/* int	main(void)
 {
 	char *str = "beep boop";
 	char *dup = ft_strdup(str);
 	printf("%s", dup);
 	free(dup);
-}
+} */

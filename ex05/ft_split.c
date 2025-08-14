@@ -1,24 +1,14 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_range.c                                         :+:      :+:    :+:   */
+/*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tchumbas <tchumbas@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/14 21:26:34 by tchumbas          #+#    #+#             */
-/*   Updated: 2025/08/14 21:28:42 by tchumbas         ###   ########.fr       */
+/*   Created: 2025/08/14 21:34:07 by tchumbas          #+#    #+#             */
+/*   Updated: 2025/08/14 21:34:18 by tchumbas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <stdlib.h>
-
-int	*ft_range(int min, int max)
-{
-	
-}
-
-int	main(void)
-{
-	printf("%ls", ft_range(1, 10));
-}
