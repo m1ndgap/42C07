@@ -6,12 +6,12 @@
 /*   By: tchumbas <tchumbas@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/14 21:10:30 by tchumbas          #+#    #+#             */
-/*   Updated: 2025/08/14 21:28:25 by tchumbas         ###   ########.fr       */
+/*   Updated: 2025/08/17 15:43:35 by tchumbas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 char	*ft_strdup(char *src)
 {
@@ -21,7 +21,8 @@ char	*ft_strdup(char *src)
 	len = 0;
 	while (src[len])
 		len++;
-	if (!(dup = malloc(sizeof(char) * (len + 1))))
+	dup = malloc(sizeof(char) * (len + 1));
+	if (!(dup))
 		return (NULL);
 	dup[len] = '\0';
 	while (len >= 0)

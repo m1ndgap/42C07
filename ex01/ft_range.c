@@ -6,7 +6,7 @@
 /*   By: tchumbas <tchumbas@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/14 21:26:34 by tchumbas          #+#    #+#             */
-/*   Updated: 2025/08/17 12:18:57 by tchumbas         ###   ########.fr       */
+/*   Updated: 2025/08/17 15:44:14 by tchumbas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,8 @@ int	*ft_range(int min, int max)
 
 	if (min >= max)
 		return (NULL);
-	if (!(range = malloc(sizeof(int) * (max - min))))
+	range = malloc(sizeof(int) * (max - min));
+	if (!range)
 		return (NULL);
 	i = 0;
 	while (min < max)
