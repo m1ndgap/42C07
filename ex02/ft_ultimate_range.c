@@ -6,7 +6,7 @@
 /*   By: tchumbas <tchumbas@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/14 21:32:54 by tchumbas          #+#    #+#             */
-/*   Updated: 2025/08/17 15:44:56 by tchumbas         ###   ########.fr       */
+/*   Updated: 2025/08/18 12:13:24 by tchumbas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ int	ft_ultimate_range(int **range, int min, int max)
 		*range = NULL;
 		return (-1);
 	}
-	temp = malloc(sizeof(int) * (max - min));
+	temp = malloc(sizeof(int) * (max - min) + 1);
 	if (!temp)
 	{
 		*range = NULL;

@@ -6,7 +6,7 @@
 /*   By: tchumbas <tchumbas@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/14 21:26:34 by tchumbas          #+#    #+#             */
-/*   Updated: 2025/08/17 15:44:14 by tchumbas         ###   ########.fr       */
+/*   Updated: 2025/08/18 11:59:41 by tchumbas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	*ft_range(int min, int max)
 
 	if (min >= max)
 		return (NULL);
-	range = malloc(sizeof(int) * (max - min));
+	range = malloc(sizeof(int) * (max - min) + 1);
 	if (!range)
 		return (NULL);
 	i = 0;
@@ -32,7 +32,7 @@ int	*ft_range(int min, int max)
 	return (range);
 }
 
-/* int	main(void)
+int	main(void)
 {
 	int *array = ft_range(-51, -10);
 	int i = 0;
@@ -42,4 +42,4 @@ int	*ft_range(int min, int max)
 		printf("%d", array[i++]);
 		printf("\n");
 	}
-} */
+}

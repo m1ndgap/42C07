@@ -6,7 +6,7 @@
 /*   By: tchumbas <tchumbas@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/14 21:33:28 by tchumbas          #+#    #+#             */
-/*   Updated: 2025/08/17 15:42:33 by tchumbas         ###   ########.fr       */
+/*   Updated: 2025/08/18 11:24:59 by tchumbas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,11 +82,11 @@ char	*ft_strjoin(int size, char **strs, char *sep)
 	return (ft_strjoin_sub(join, size, strs, sep));
 }
 
-/* int	main(void)
+int	main(void)
 {
 	int size = 3;
 	char *strings[] = {"lol", "lmao", "fofl"};
 	char *separator = ";:;:;";
 	printf("%s", ft_strjoin(size, strings, separator));
 	return (0);
-} */
+}
