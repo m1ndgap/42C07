@@ -6,7 +6,7 @@
 /*   By: tchumbas <tchumbas@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/14 21:33:28 by tchumbas          #+#    #+#             */
-/*   Updated: 2025/08/18 11:24:59 by tchumbas         ###   ########.fr       */
+/*   Updated: 2025/08/19 10:40:01 by tchumbas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ unsigned int	ft_strlen(char *str)
 	return (i);
 }
 
-unsigned int	ft_all_strlen(int size, char **strs, char *sep)
+int	ft_all_strlen(int size, char **strs, char *sep)
 {
 	int	i;
 	int	fulllen;
@@ -62,6 +62,7 @@ char	*ft_strjoin_sub(char *fullstr, int size, char **strs, char *sep)
 		}
 		i++;
 	}
+	fullstr[z] = '\0';
 	return (fullstr);
 }
 
@@ -70,23 +71,27 @@ char	*ft_strjoin(int size, char **strs, char *sep)
 	int		fulllen;
 	char	*join;
 
-	fulllen = ft_all_strlen(size, strs, sep);
 	if (size <= 0)
 	{
-		join = malloc(0);
+		join = malloc(1);
 		return (join);
 	}
+	fulllen = ft_all_strlen(size, strs, sep);
 	join = malloc(sizeof(char) * fulllen);
 	if (!join)
 		return (NULL);
 	return (ft_strjoin_sub(join, size, strs, sep));
 }
 
-int	main(void)
+/* int	main(void)
 {
-	int size = 3;
-	char *strings[] = {"lol", "lmao", "fofl"};
-	char *separator = ";:;:;";
+	int		size;
+	char	*strings[] = {"lol", "lmao", "fofl"};
+	char	*separator;
+
+	size = 3;
+	separator = ";:;:;";
 	printf("%s", ft_strjoin(size, strings, separator));
 	return (0);
 }
+ */
